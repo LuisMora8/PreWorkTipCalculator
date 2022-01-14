@@ -4,7 +4,7 @@
 
 Submitted by: **Luis Mora**
 
-Time spent: **2** hours spent in total
+Time spent: **3** hours spent in total
 
 ## User Stories
 
@@ -13,25 +13,33 @@ The following **required** functionality is complete:
 * [X] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 * [X] User can select between tip percentages by tapping different values on the segmented control and the tip value is updated accordingly
 
+The following **optional** features are implemented:
+
+* [ ] UI animations
+* [ ] Remembering the bill amount across app restarts (if <10mins)
+* [ ] Using locale-specific currency and currency thousands separators.
+* [ ] Making sure the keyboard is always visible and the bill amount is always the first responder. This way the user doesn't have to tap anywhere to use this app. Just launch the app and start typing.
+
 The following **additional** features are implemented:
 
-- [X] Settings page where the user can change the default tip percentages
+- [X] Settings view where the user can update the default tip percentages
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+![](https://i.imgur.com/JuILIAG.gif)
+
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
-The default tip data was shared between controller views by using the UserDefaults.standard dictionaries.
+Using the UserDefualts.standard to pass data between the View Controllers was a bit challenging. This was achieved by saving the input text to the UserDefaults and then using the new data to update the segmented control with the viewWillAppear() function.
 
 ## License
 
-    Copyright [2022] [Luis Mora]
+    Copyright [yyyy] [name of copyright owner]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
